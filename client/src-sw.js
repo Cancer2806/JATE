@@ -28,7 +28,7 @@ registerRoute(({ request }) => {
   ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
     new StaleWhileRevalidate({
       // Name of the cache storage.
-      cacheName: 'asset-cache',
+      cacheName: 'page-cache',
       plugins: [
         // This plugin will cache responses with these headers to a maximum-age of 30 days
         new CacheableResponsePlugin({
@@ -36,7 +36,7 @@ registerRoute(({ request }) => {
         }),
       ],
     });
-  return request.mode === 'navigate', pageCache
+  request.mode === 'navigate', pageCache
 });
 
 // TODO: Implement asset caching
