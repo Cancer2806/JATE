@@ -26,28 +26,28 @@ Simple Text Editor deployed to Heroku as a Progressive Web Application, using We
 
 ## Usage 
 
-  Project is deployed to Heroku.  Navigate to the deployment at 
-  
-  ova or similar software can be used to test the routes.  Users can be created, updated and deleted.  Thoughts can be created, updated and deleted.  A single user or all users can be displayed.  A single thought or all thoughts can be displayed.  Reactions can be added or removed from thoughts.  Friends (other users) can be added or removed from a Users profile.  Thoughts are linked to the User that created the thought and reactions retain the identity of the User entering the reaction.  The majority of the data is dated on creation.   
+  Project is deployed to Heroku.  Navigate to the deployment at https://jate021.herokuapp.com/   
+
+  From there, it is extremely intuitive, simply type in anything that you want to remember and it will be saved when the editor loses focus.  Data will persist as it is saved to the Browsers indexDB and can save to local storage as a backup.
+
+  The application will run even when not connected to the internet.
+
+  The application can also be downloaded (by pressing the Install button).  It will place an icon on the desktop and operate as a stand alone application, outside of the browser.   
 
 <br>
 
-  A video walkthrough of the routes in action can be found at: 
-
-<br>
-
-  The Project code repository is stored at: https://github.com/Cancer2806/Thoughts 
+  The Project code repository is stored at: https://github.com/Cancer2806/JATE 
 
 
 <br>
 
-  Following are screenshots showing the routes being used in Nova:  
+  Following are screenshots showing the application in use:  
 
 
-Get Users:
+Heroku Deployment:
 <br>
-<img src="./assets/images/GetUsers.png" width=700 alt = "Get All Users">  
-This route lists all users with Friends and Thoughts fully populated
+<img src="./images/JATE_Heroku.png" width=700 alt = "Heroku Deployment">  
+Showing the text editor in use on Heroku
 
 <br>
 
@@ -56,26 +56,14 @@ Delete Thought:
 <img src="./assets/images/DeleteThought.png" width=700 alt = "Delete a Thought">  
 This route allow a Thought to be deleted  
 
-<br>
-
-Add Friend:
-<br>
-<img src="./assets/images/AddFriend.png" width=700 alt = "Add a Friend">  
-This route add a Friend sub-document to a User  
-
-<br>
-
-Delete User:
-<br>
-<img src="./assets/images/DeleteUser.png" width=700 alt = "Delete a User">  
-This route deletes a User along with all of their Thoughts  
 
 <br>
 
 
 ## Credits  
 
-  Node, MongoDB, Mongoose, Express, are heavily used in the Project.  Nova was used for testing the routes.   
+  Starter code for the application was provided by UWA as part of the Full Stack Developer Bootcamp course.
+  Node, Express, Webpack and Heroku were heavily used in development of the application.   
 
 
 ## Contributing  
