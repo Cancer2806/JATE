@@ -53,8 +53,8 @@ Showing the text editor in use on Heroku
 
 Delete Thought:
 <br>
-<img src="./assets/images/DeleteThought.png" width=700 alt = "Delete a Thought">  
-This route allow a Thought to be deleted  
+<img src="./images/Standalone.png" width=700 alt = "Operating Standalone">  
+Showing the text editor operating independently and alongside Heroku deployment, complete with desktop icon  
 
 
 <br>

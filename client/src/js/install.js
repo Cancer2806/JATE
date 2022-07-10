@@ -5,6 +5,9 @@ const butInstall = document.getElementById('buttonInstall');
 window.addEventListener('beforeinstallprompt', (event) => {
   // store the event
   window.deferredPrompt = event;
+
+  // Expose the button
+  butInstall.classList.toggle('hidden', false);
 });
 
 // Implement a click event handler on the `butInstall` element
@@ -14,7 +17,10 @@ butInstall.addEventListener('click', async () => {
     return;
   }
   promptEvent.prompt();
+  // reset the prompt variable as it can only be used once
   window.preferredPrompt = null;
+  //  Hide the button
+  butInstall.classList.toggle('hidden', true);
 });
 
 // Add an handler for the `appinstalled` event
